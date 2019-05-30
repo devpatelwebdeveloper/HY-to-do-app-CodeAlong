@@ -1,0 +1,30 @@
+#error {
+  display: none;
+  background: rgba(228, 77, 72, 0.5);
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+ul li {
+  cursor: move;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+}
+
+ul a {
+  grid-column: span 1 / -1;
+  align-self: center;
+  text-align: right;
+  color: #e44d48;
+}
+
+li span.toDoItem span {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+}
